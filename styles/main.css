@@ -30,6 +30,11 @@ body {
   padding: 0 16px;
 }
 
+.float-right {
+  float: right;
+  padding: 0 16px;
+}
+
 .w-30 {
   width: 30%;
 }
@@ -49,6 +54,9 @@ body {
 .relative {
   position: relative;
 }
+.absolute {
+  position: absolute;
+}
 
 .position-center {
   position: absolute;
@@ -57,10 +65,17 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.position-right {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+
 
 /* HEADER */
 .main-header {
-  background: lightblue;
+  background-color: #fff;
 }
 
 .navbar {
@@ -202,4 +217,69 @@ body {
   left: 50%;
   transform: translateX(-50%);
   width: 380px;
+}
+
+
+
+@media all and (max-width:768px){
+  .container{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .navbar-col-left{
+    width: 100%;
+  }
+
+  .navbar-col-right{
+    display: none;
+  }
+
+  .media-xs{
+    float: none;
+    width: 100%;
+  }
+
+  /* how */
+
+  .how-works-bg {
+    background-position: 20%;
+  }
+
+  #how-works .contents {
+    padding-bottom: 60px;
+  }
+
+  #how-works .col-sx,
+  #how-works .col-dx {
+    padding-top: 50px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #how-works .col-sx h3,
+  #how-works .col-dx h4 {
+    font-weight: 600;
+    font-size: 30px;
+    width: 190px;
+    display: inline-block;
+    text-align: left;
+  }
+
+
+  #how-works .img-phone {
+    display: none;
+  }
+
+
+}
+
+@media all and (min-width:769px) and (max-width:991px){
+
+
+}
+
+@media all and (min-width:992px){
+
 }
